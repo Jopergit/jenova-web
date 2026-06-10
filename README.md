@@ -1,10 +1,16 @@
 # JENOVA Publicidad Gráfica
 
-Sitio web corporativo estático para JENOVA, empresa de publicidad gráfica, señalética industrial, letreros, adhesivos e instalación en terreno en la Región del Biobío, Chile.
+Sitio web corporativo estático para JENOVA, empresa de publicidad gráfica, señalética industrial, letreros, adhesivos, vinilos e instalación en terreno en Concepción, Coronel y la Región del Biobío, Chile.
 
 ## Cómo abrir el sitio
 
-Abre el archivo `index.html` directamente en Edge, Chrome o cualquier navegador moderno.
+Versión publicada:
+
+```text
+https://jenova.cl
+```
+
+Para revisar localmente, abre el archivo `index.html` directamente en Edge, Chrome o cualquier navegador moderno.
 
 No necesita instalar dependencias ni levantar servidor.
 
@@ -63,9 +69,7 @@ assets/img/hero-industrial-signage.png
 
 Puedes reemplazarla por una foto real manteniendo el mismo nombre. Si usas otro nombre, cambia el `src` en `index.html`.
 
-La galería actual usa mockups creados con CSS. Cuando tengas fotos reales, agrega imágenes en `assets/img/proyectos/` y convierte cada tarjeta de proyecto para usar una etiqueta `<img>`.
-
-La página `proyectos.html` ya está preparada como galería ampliada para mostrar trabajos reales.
+La galería actual usa imágenes reales y piezas referenciales en `assets/img/proyectos/`.
 
 ## Cambiar logo
 
@@ -99,22 +103,12 @@ Los colores principales están al inicio de `css/styles.css`:
 4. Build command: dejar vacío.
 5. Output directory: `/` o dejar vacío según la interfaz.
 
-## Publicar en GitHub Pages
-
-1. Sube los archivos al repositorio.
-2. En GitHub, entra a `Settings > Pages`.
-3. Selecciona la rama principal y la carpeta raíz.
-4. Guarda y espera la URL generada.
-
-## SEO pendiente cuando tengas datos reales
+## SEO pendiente cuando tengas más datos reales
 
 Cuando tengas datos definitivos, actualiza:
 
-- Número real de contacto.
-- Email real.
-- Comuna principal de atención.
-- Dominio final, si compras uno.
-- Fotos reales de proyectos.
+- Nuevas fotos reales de proyectos.
 - Instagram y redes sociales si existen.
+- Dirección o comuna principal si se decide publicarla.
 
 También conviene actualizar el JSON-LD en el `<head>` de `index.html`, especialmente `telephone`, `email` y, si corresponde, dirección o comuna.

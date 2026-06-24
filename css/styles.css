@@ -143,6 +143,8 @@ textarea {
 }
 
 .nav-panel a {
+  display: inline-flex;
+  align-items: center;
   transition: color 180ms ease;
 }
 
@@ -437,6 +439,7 @@ p {
 
 .text-link {
   display: inline-flex;
+  align-items: center;
   margin-top: 8px;
   color: var(--accent);
   font-size: 0.88rem;
@@ -945,6 +948,8 @@ p {
   border-radius: var(--radius);
   background: rgba(15, 17, 21, 0.86);
   color: var(--text);
+  font: inherit;
+  font-size: 1rem;
   padding: 11px 12px;
   outline: none;
   transition: border-color 180ms ease, box-shadow 180ms ease;
@@ -1119,7 +1124,18 @@ p {
   }
 
   .nav-panel a {
+    min-height: 44px;
     padding: 12px;
+  }
+
+  .text-link,
+  a[href^="tel:"],
+  a[href^="mailto:"],
+  .footer-grid a,
+  .contact-options a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
   }
 
   .nav-cta {
@@ -1184,6 +1200,30 @@ p {
     flex-direction: column;
   }
 
+  .text-link,
+  a[href^="tel:"],
+  a[href^="mailto:"],
+  .footer-grid a,
+  .contact-options a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .privacy-check {
+    min-height: 44px;
+  }
+
+  .privacy-check a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .footer-grid li + li {
+    margin-top: 4px;
+  }
+
   .btn {
     width: 100%;
   }
@@ -1209,6 +1249,10 @@ p {
   .card-two,
   .card-three {
     display: none;
+  }
+
+  .site-footer {
+    padding-bottom: 78px;
   }
 }
 

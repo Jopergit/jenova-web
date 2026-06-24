@@ -5,8 +5,9 @@ const quoteForm = document.querySelector("#quoteForm");
 const formNote = document.querySelector("#formNote");
 const year = document.querySelector("#year");
 
-// Numero de contacto para llamadas. WhatsApp queda pendiente hasta tener un equipo con WhatsApp activo.
-const CONTACT_PHONE = "+56972426256";
+// Numero de contacto para llamadas y WhatsApp.
+const CONTACT_PHONE = "56983844971";
+const CONTACT_PHONE_DISPLAY = "+56 9 8384 4971";
 
 // Cambia este email si quieres usarlo en futuros enlaces mailto.
 const CONTACT_EMAIL = "contacto.jenova@gmail.com";
@@ -63,27 +64,29 @@ quoteForm?.addEventListener("submit", (event) => {
   const medidas = formData.get("medidas")?.toString().trim();
   const mensaje = formData.get("mensaje")?.toString().trim();
 
-  if (!nombre || !telefono || !servicio) {
-    formNote.textContent = "Completa nombre, telefono y tipo de servicio para enviar la solicitud.";
+  if (!nombre || !telefono || !servicio || !mensaje) {
+    formNote.classList.remove("is-success");
+    formNote.classList.add("is-error");
+    formNote.textContent = "Completa nombre, teléfono, tipo de servicio y mensaje breve para enviar la solicitud.";
     return;
   }
 
   const lines = [
-    "Hola JENOVA, quiero solicitar una cotizacion.",
+    "Hola JENOVA, quiero solicitar una cotización.",
     "",
     `Nombre: ${nombre}`,
     empresa ? `Empresa: ${empresa}` : "",
-    `Telefono: ${telefono}`,
+    `Teléfono: ${telefono}`,
     `Servicio: ${servicio}`,
     medidas ? `Medidas aproximadas: ${medidas}` : "",
     mensaje ? `Mensaje: ${mensaje}` : "",
   ].filter(Boolean);
 
-  const subject = encodeURIComponent("Solicitud de cotizacion JENOVA");
-  const body = encodeURIComponent(lines.join("\n"));
-  const mailUrl = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-  formNote.textContent = "Abriendo tu correo con la solicitud preparada. Tambien puedes llamar al +56 9 7242 6256.";
-  window.location.href = mailUrl;
+  const whatsappUrl = `https://wa.me/${CONTACT_PHONE}?text=${encodeURIComponent(lines.join("\n"))}`;
+  formNote.classList.remove("is-error");
+  formNote.classList.add("is-success");
+  formNote.textContent = `Recibimos tu solicitud. Se abrirá WhatsApp para enviarla a JENOVA; también puedes llamar al ${CONTACT_PHONE_DISPLAY}.`;
+  window.open(whatsappUrl, "_blank", "noopener");
 });
 
 document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {

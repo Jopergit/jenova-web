@@ -152,11 +152,19 @@
             <h1>Señalética y gráfica corporativa para empresas</h1>
             <p>
               Diseñamos, fabricamos e instalamos señalética industrial, letreros, adhesivos e
-              identificación visual para empresas que necesitan comunicar con orden, seguridad y
-              una presentación profesional.
+              identificación visual para empresas de Concepción, Coronel y la Región del Biobío
+              que necesitan comunicar con orden, seguridad y una presentación profesional.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#cotizacion">Solicitar cotización</a>
+              <a
+                class="btn btn-primary btn-whatsapp"
+                href="https://wa.me/56983844971?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20de%20se%C3%B1al%C3%A9tica%2Fgr%C3%A1fica%20para%20mi%20empresa"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16.04 3.2A12.76 12.76 0 0 0 5.18 22.67L3.6 28.8l6.28-1.62A12.76 12.76 0 1 0 16.04 3.2Zm0 23.22c-2 0-3.94-.57-5.62-1.66l-.4-.25-3.73.96.99-3.64-.26-.42a10.43 10.43 0 1 1 9.02 5.01Zm5.72-7.8c-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.82 1.02-1 1.23-.19.21-.37.24-.68.08-.31-.16-1.33-.49-2.53-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.62s1.13 3.04 1.29 3.25c.16.21 2.22 3.39 5.38 4.75.75.32 1.34.52 1.8.66.76.24 1.45.21 1.99.13.61-.09 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.37Z" /></svg>
+                Cotizar por WhatsApp
+              </a>
               <a class="btn btn-secondary" href="servicios.html">Ver servicios</a>
             </div>
             <dl class="hero-stats" aria-label="Especialidades de JENOVA">
@@ -194,7 +202,8 @@
             <h2>Producción gráfica lista para locales, oficinas, bodegas y plantas industriales</h2>
             <p>
               Creamos piezas visuales que ayudan a orientar, señalizar, identificar áreas y reforzar
-              la presencia de marca en espacios de trabajo reales.
+              la presencia de marca en espacios de trabajo reales de Concepción, Coronel y la Región
+              del Biobío.
             </p>
           </div>
 
@@ -300,7 +309,7 @@
                 alt="Vinilo empavonado instalado en puertas de acceso"
               />
               <div class="project-body">
-                <span>Vinilos y adhesivos</span>
+                <span class="project-tag">Vinilos y adhesivos</span>
                 <h3>Vinilo empavonado en puertas</h3>
                 <p>Aplicación en vidrio para privacidad, identidad visual y terminación corporativa.</p>
               </div>
@@ -312,7 +321,7 @@
                 alt="Señalética no estacionar frente al portón"
               />
               <div class="project-body">
-                <span>Señalética industrial</span>
+                <span class="project-tag">Señalética industrial</span>
                 <h3>Señalética normativa</h3>
                 <p>Diseño de aviso no estacionar para acceso vehicular y control de portón.</p>
               </div>
@@ -324,7 +333,7 @@
                 alt="Paloma publicitaria Jerplaz instalada en exterior"
               />
               <div class="project-body">
-                <span>Letreros comerciales</span>
+                <span class="project-tag">Letreros comerciales</span>
                 <h3>Paloma publicitaria instalada</h3>
                 <p>Soporte exterior para librería con gráfica comercial de alto formato.</p>
               </div>
@@ -336,7 +345,7 @@
                 alt="Etiqueta adhesiva La Officina Market Drink"
               />
               <div class="project-body">
-                <span>Adhesivos personalizados</span>
+                <span class="project-tag">Adhesivos personalizados</span>
                 <h3>Etiqueta comercial a medida</h3>
                 <p>Diseño de adhesivo para marca local, preparado para impresión en formato horizontal.</p>
               </div>
@@ -348,7 +357,7 @@
                 alt="Diseño de señalética interior para librería"
               />
               <div class="project-body">
-                <span>Identificación de áreas</span>
+                <span class="project-tag">Identificación de áreas</span>
                 <h3>Señalética interior</h3>
                 <p>Rotulación direccional para ordenar categorías y mejorar la orientación del cliente.</p>
               </div>
@@ -356,6 +365,8 @@
           </div>
         </div>
       </section>
+
+      <!-- TODO: agregar testimonios reales cuando el cliente los proporcione -->
 
       <section class="section faq" id="faq">
         <div class="container faq-grid">
@@ -530,7 +541,7 @@
               <input type="text" name="nombre" placeholder="Tu nombre" autocomplete="name" maxlength="80" required />
             </label>
             <label>
-              Empresa
+              Empresa <span class="optional-label">(opcional)</span>
               <input type="text" name="empresa" placeholder="Nombre de empresa o negocio" autocomplete="organization" maxlength="100" />
             </label>
             <label>
@@ -552,23 +563,27 @@
               </select>
             </label>
             <label>
-              Medidas aproximadas
+              Medidas aproximadas <span class="optional-label">(opcional)</span>
               <input type="text" name="medidas" placeholder="Ej: 120 x 80 cm, 3 unidades" maxlength="120" />
             </label>
             <label class="full">
-              Mensaje
+              Mensaje breve
               <textarea
                 name="mensaje"
                 rows="5"
                 maxlength="700"
                 placeholder="Describe el lugar, material, cantidad o fecha estimada"
+                required
               ></textarea>
             </label>
             <label class="full privacy-check">
               <input type="checkbox" name="privacidad" required />
               <span>Acepto que JENOVA use estos datos solo para responder mi solicitud de cotización. Ver <a href="privacidad.html">política de privacidad</a>.</span>
             </label>
-            <button class="btn btn-primary full" type="submit">Preparar solicitud por correo</button>
+            <button class="btn btn-primary btn-whatsapp full" type="submit">
+              <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16.04 3.2A12.76 12.76 0 0 0 5.18 22.67L3.6 28.8l6.28-1.62A12.76 12.76 0 1 0 16.04 3.2Zm0 23.22c-2 0-3.94-.57-5.62-1.66l-.4-.25-3.73.96.99-3.64-.26-.42a10.43 10.43 0 1 1 9.02 5.01Zm5.72-7.8c-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.82 1.02-1 1.23-.19.21-.37.24-.68.08-.31-.16-1.33-.49-2.53-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.62s1.13 3.04 1.29 3.25c.16.21 2.22 3.39 5.38 4.75.75.32 1.34.52 1.8.66.76.24 1.45.21 1.99.13.61-.09 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.37Z" /></svg>
+              Enviar solicitud por WhatsApp
+            </button>
             <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
           </form>
         </div>
@@ -578,7 +593,12 @@
         <div class="container contact-band reveal">
           <div>
             <span class="eyebrow">Contacto</span>
-            <h2>Listos para señalizar, identificar o mejorar la presencia visual de tu empresa</h2>
+            <h2>Listos para señalizar, identificar o mejorar la presencia visual de tu empresa en Biobío</h2>
+            <p>
+              Atendemos solicitudes de señalética, letreros, adhesivos y gráfica aplicada para
+              empresas de Concepción, Coronel y alrededores.
+              <!-- TODO: confirmar comunas adicionales de cobertura para ampliar este texto sin inventar zonas. -->
+            </p>
             <p class="contact-highlight">
               Contacto directo:
               <a href="tel:+56983844971">+56 9 8384 4971</a>
@@ -588,7 +608,15 @@
               <a href="tel:+56983844971">+56 9 8384 4971</a>
             </p>
           </div>
-          <a class="btn btn-primary" href="#cotizacion">Solicitar cotización</a>
+          <a
+            class="btn btn-primary btn-whatsapp"
+            href="https://wa.me/56983844971?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20de%20se%C3%B1al%C3%A9tica%2Fgr%C3%A1fica%20para%20mi%20empresa"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16.04 3.2A12.76 12.76 0 0 0 5.18 22.67L3.6 28.8l6.28-1.62A12.76 12.76 0 1 0 16.04 3.2Zm0 23.22c-2 0-3.94-.57-5.62-1.66l-.4-.25-3.73.96.99-3.64-.26-.42a10.43 10.43 0 1 1 9.02 5.01Zm5.72-7.8c-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.82 1.02-1 1.23-.19.21-.37.24-.68.08-.31-.16-1.33-.49-2.53-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.62s1.13 3.04 1.29 3.25c.16.21 2.22 3.39 5.38 4.75.75.32 1.34.52 1.8.66.76.24 1.45.21 1.99.13.61-.09 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.37Z" /></svg>
+            Cotizar por WhatsApp
+          </a>
         </div>
       </section>
     </main>
@@ -627,11 +655,13 @@
     </footer>
 
     <a
-      class="call-float"
-      href="tel:+56983844971"
-      aria-label="Llamar a JENOVA"
+      class="whatsapp-float"
+      href="https://wa.me/56983844971?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20de%20se%C3%B1al%C3%A9tica%2Fgr%C3%A1fica%20para%20mi%20empresa"
+      aria-label="Cotizar por WhatsApp con JENOVA"
+      target="_blank"
+      rel="noopener"
     >
-      LL
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16.04 3.2A12.76 12.76 0 0 0 5.18 22.67L3.6 28.8l6.28-1.62A12.76 12.76 0 1 0 16.04 3.2Zm0 23.22c-2 0-3.94-.57-5.62-1.66l-.4-.25-3.73.96.99-3.64-.26-.42a10.43 10.43 0 1 1 9.02 5.01Zm5.72-7.8c-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.82 1.02-1 1.23-.19.21-.37.24-.68.08-.31-.16-1.33-.49-2.53-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.62s1.13 3.04 1.29 3.25c.16.21 2.22 3.39 5.38 4.75.75.32 1.34.52 1.8.66.76.24 1.45.21 1.99.13.61-.09 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.37Z" /></svg>
     </a>
 
     <script src="js/main.js"></script>

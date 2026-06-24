@@ -1221,3 +1221,19 @@ p {
     animation-duration: 0.01ms !important;
   }
 }
+
+/* Refuerzo final para evitar que el CTA de WhatsApp herede el amarillo del boton primario. */
+.btn.btn-whatsapp,
+.quote-form .btn.btn-whatsapp {
+  background: #25d366;
+  border-color: #25d366;
+  color: #07140c;
+  box-shadow: 0 16px 42px rgba(37, 211, 102, 0.24);
+}
+
+.btn.btn-whatsapp:hover,
+.quote-form .btn.btn-whatsapp:hover {
+  background: #2ee677;
+  border-color: #2ee677;
+  color: #07140c;
+}

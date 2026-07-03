@@ -763,6 +763,52 @@ p {
   background: var(--bg);
 }
 
+.coverage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.coverage-card,
+.service-quote-strip {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.065), rgba(255, 255, 255, 0.025));
+  padding: 24px;
+}
+
+.coverage-card h3,
+.service-quote-strip h2 {
+  color: var(--text);
+}
+
+.service-quote-strip {
+  margin-top: 18px;
+}
+
+.service-quote-strip .btn {
+  margin-top: 8px;
+}
+
+.related-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.related-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 0.86rem;
+}
+
 .client-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1230,6 +1276,7 @@ p {
 
   .hero-stats,
   .benefit-grid,
+  .coverage-grid,
   .process-line,
   .project-gallery,
   .client-grid,

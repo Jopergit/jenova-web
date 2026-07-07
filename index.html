@@ -31,21 +31,20 @@
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="preload" href="assets/img/hero-industrial-signage.webp" as="image" />
     <link rel="stylesheet" href="css/styles.css?v=20260702-seo1" />
+    <!-- TODO: confirmar dirección exacta pública antes de agregar address al JSON-LD. -->
+    <!-- TODO: confirmar horario público definitivo antes de agregar openingHours al JSON-LD. -->
+    <!-- TODO: confirmar coordenadas públicas antes de agregar geo al JSON-LD. -->
+    <!-- TODO: confirmar rango de precios antes de agregar priceRange al JSON-LD. -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": ["LocalBusiness", "ProfessionalService"],
+        "@type": "LocalBusiness",
         "@id": "https://jenova.cl/#empresa",
         "name": "JENOVA Publicidad Gráfica",
-        "url": "https://jenova.cl/",
-        "logo": "https://jenova.cl/assets/img/logo-jenova-web.webp",
-        "image": "https://jenova.cl/assets/img/hero-industrial-signage.webp",
-        "description": "Publicidad gráfica, señalética industrial, letreros comerciales, adhesivos, vinilos e identificación visual para empresas de Concepción, Coronel, San Pedro de la Paz, Lota y la Región del Biobío.",
+        "url": "https://jenova.cl",
+        "telephone": "+56983844971",
+        "description": "Señalética industrial, letreros comerciales, adhesivos y vinilos para empresas en Concepción, Coronel, San Pedro de la Paz, Lota y Región del Biobío. Cotiza con JENOVA.",
         "areaServed": [
-          {
-            "@type": "AdministrativeArea",
-            "name": "Región del Biobío, Chile"
-          },
           {
             "@type": "City",
             "name": "Concepción"
@@ -61,65 +60,11 @@
           {
             "@type": "City",
             "name": "Lota"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Región del Biobío"
           }
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "addressRegion": "Biobío",
-          "addressCountry": "CL"
-        },
-        "email": "contacto.jenova@gmail.com",
-        "telephone": "+56 9 8384 4971",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+56 9 8384 4971",
-          "email": "contacto.jenova@gmail.com",
-          "contactType": "Cotizaciones y atención comercial",
-          "areaServed": "CL",
-          "availableLanguage": "es-CL"
-        },
-        "priceRange": "$$",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Servicios de publicidad gráfica",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Señalética industrial"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Letreros comerciales"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Adhesivos y vinilos"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Instalación gráfica en terreno"
-              }
-            }
-          ]
-        },
-        "knowsAbout": [
-          "Señalética industrial",
-          "Letreros comerciales",
-          "Adhesivos y vinilos",
-          "Identificación de áreas",
-          "Instalación en terreno",
-          "Publicidad gráfica"
         ]
       }
     </script>
@@ -134,7 +79,7 @@
             "name": "¿Pueden diseñar la señalética si no tengo archivo listo?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. JENOVA puede preparar una propuesta visual según el uso, medidas, información requerida e imagen de la empresa."
+              "text": "Sí. Podemos preparar una propuesta visual según el uso, medidas, información requerida e imagen de la empresa."
             }
           },
           {
@@ -142,7 +87,7 @@
             "name": "¿Qué datos ayudan a cotizar más rápido?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Medidas aproximadas, cantidad de piezas, lugar de instalación, material deseado y una foto del espacio ayudan a cotizar con mayor precisión."
+              "text": "Medidas aproximadas, cantidad de piezas, lugar de instalación, material deseado y una foto del espacio ayudan mucho."
             }
           },
           {
